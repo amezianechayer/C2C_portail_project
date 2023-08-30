@@ -14,8 +14,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.SendVerificationCode = exports.GenerateAccessCode = void 0;
 const twilio_1 = __importDefault(require("twilio"));
-const accountSid = "AC4dbf4c25f4ea6ff8d0fd2279a255c987";
-const authToken = "9c2adcbd262fd52afaf31389346b6223";
+const accountSid = "accountsid";
+const authToken = "authToken";
 const client = (0, twilio_1.default)(accountSid, authToken);
 const GenerateAccessCode = () => {
     const code = Math.floor(10000 + Math.random() * 900000);
