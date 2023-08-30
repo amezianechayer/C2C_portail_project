@@ -26,7 +26,7 @@ const GenerateAccessCode = () => {
 exports.GenerateAccessCode = GenerateAccessCode;
 const SendVerificationCode = (code, toPhoneNumber) => __awaiter(void 0, void 0, void 0, function* () {
     const response = yield client.messages.create({
-        body: `Votre code de verification est ${code} a cheliqaaaaaa n kenza qui va expirer dans 30 minutes`,
+        body: `Votre code de verification est ${code} qui va expirer dans 30 minutes`,
         from: "+12059315471",
         // "+18138963397"
         to: toPhoneNumber.trim(),
